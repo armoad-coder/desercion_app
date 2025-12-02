@@ -1,0 +1,21 @@
+Entorno Virtual
+
+venv/
+.venv/
+
+Archivos de Python
+
+pycache/
+*.pyc
+*.pyo
+*.pyd
+
+Flask / Servidor
+
+instance/
+.flaskenv
+
+Editor e IDEs (opcional pero recomendado)
+
+.vscode/
+.idea/
