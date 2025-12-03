@@ -3,6 +3,7 @@ from utils.configs import Config
 from flask_migrate import Migrate
 from utils.extensions import db, bcrypt, jwt, cors
 from routes.user_routes import user_bp
+from routes.auth_routes import auth_bp
 
 def create_app():
     app = Flask(__name__)
@@ -20,6 +21,7 @@ def create_app():
 
     # Registramos los blueprint para routes.
     app.register_blueprint(user_bp, url_prefix='/api/users')
+    app.register_blueprint(auth_bp, url_prefix='/api/auth')
 
     # Para migraciones
     Migrate(app, db)

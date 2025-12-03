@@ -1,9 +1,11 @@
 from flask import Blueprint, request, jsonify
 from services.user_services import create_user_service, update_user_service, reset_password_service
+from flask_jwt_extended import jwt_required, get_jwt_identity
 
 user_bp = Blueprint('user_bp', __name__)
 
 @user_bp.route('/create/', methods=['POST'])
+@jwt_required()
 def create_user():
     data = request.get_json()
     # 1. Validación básica de entrada
@@ -37,6 +39,7 @@ def create_user():
         return jsonify({'error': 'Error interno del servidor'}), 500
 
 @user_bp.route('/update/<int:user_id>', methods=['PUT'])
+@jwt_required()
 def update_user(user_id):
     data = request.get_json()
     
@@ -67,6 +70,7 @@ def update_user(user_id):
 
 # URL Final: PUT /api/users/reset_password/1
 @user_bp.route('/reset_password/<int:user_id>', methods=['PUT'])
+@jwt_required()
 def reset_password(user_id):
     data = request.get_json()
 
