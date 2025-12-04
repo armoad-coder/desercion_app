@@ -1,4 +1,4 @@
-from models.user_models import User
+from src.models.user_models import User
 from flask_jwt_extended import create_access_token
 
 def login_service(data):

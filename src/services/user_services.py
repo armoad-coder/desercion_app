@@ -1,5 +1,5 @@
-from utils.extensions import db
-from models.user_models import User
+from src.utils.extensions import db
+from src.models.user_models import User
 
 # Crear User.
 def create_user_service(data):
