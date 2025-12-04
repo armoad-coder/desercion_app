@@ -16,8 +16,22 @@ def create_app():
     jwt.init_app(app)
     cors.init_app(app)
 
+    # === MODELOS DE BASE DE DATOS ===
     # Importar modelos para que Migrate los detecte(No son utilizados en app.py como tal)
     from src.models.user_models import User
+    # Catálogos Básicos (Definiciones)
+    from src.models.academic_year_model import AcademicYear
+    from src.models.semester_model import Semester
+    from src.models.major_model import Major
+    from src.models.course_model import Course
+    from src.models.evaluation_type_model import EvaluationType
+
+    # Entidades Principales
+    from src.models.student_model import Student
+
+    # Tablas de Relación (Uniones)
+    from src.models.curriculum_model import CurriculumCourse
+    from src.models.academic_record_model import AcademicRecord
 
     # Registramos los blueprint para routes.
     app.register_blueprint(user_bp, url_prefix='/api/users')
