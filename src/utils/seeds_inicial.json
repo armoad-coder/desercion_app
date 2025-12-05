@@ -12,18 +12,10 @@
     { "NOMBRE": "2016", "año": 2016 },
     { "NOMBRE": "2015", "año": 2015 },
     { "NOMBRE": "2014", "año": 2014 },
-    { "NOMBRE": "2013", "año": 2013 },
-    { "NOMBRE": "2012", "año": 2012 },
-    { "NOMBRE": "2011", "año": 2011 },
-    { "NOMBRE": "2010", "año": 2010 },
-    { "NOMBRE": "2009", "año": 2009 },
-    { "NOMBRE": "2008", "año": 2008 },
-    { "NOMBRE": "2007", "año": 2007 },
-    { "NOMBRE": "2006", "año": 2006 },
-    { "NOMBRE": "2005", "año": 2005 }
+    { "NOMBRE": "2013", "año": 2013 }
   ],
 
-  "major": [
+  "course": [
     { "NOMBRE": "COMPUTACION I", "CODIGO": "KTII001" },
     { "NOMBRE": "ELECTRONICA I", "CODIGO": "KTII002" },
     { "NOMBRE": "FISICA I", "CODIGO": "KTII003" },
@@ -83,14 +75,21 @@
 
   "semester": [
     { "NOMBRE": "1er Semestre", "SEMESTRE": 1 },
-    { "NOMBRE": "1er Semestre", "SEMESTRE": 1 },
-    { "NOMBRE": "1er Semestre", "SEMESTRE": 1 },
-    { "NOMBRE": "1er Semestre", "SEMESTRE": 1 },
-    { "NOMBRE": "1er Semestre", "SEMESTRE": 1 },
-    { "NOMBRE": "1er Semestre", "SEMESTRE": 1 },
-    { "NOMBRE": "1er Semestre", "SEMESTRE": 1 },
-    { "NOMBRE": "1er Semestre", "SEMESTRE": 1 },
-    { "NOMBRE": "1er Semestre", "SEMESTRE": 1 },
-    { "NOMBRE": "1er Semestre", "SEMESTRE": 1 }
+    { "NOMBRE": "2do Semestre", "SEMESTRE": 2 },
+    { "NOMBRE": "3cer Semestre", "SEMESTRE": 3 },
+    { "NOMBRE": "4to Semestre", "SEMESTRE": 4 },
+    { "NOMBRE": "5to Semestre", "SEMESTRE": 5 },
+    { "NOMBRE": "6to Semestre", "SEMESTRE": 6 },
+    { "NOMBRE": "7mo Semestre", "SEMESTRE": 7 },
+    { "NOMBRE": "8vo Semestre", "SEMESTRE": 8 },
+    { "NOMBRE": "9no Semestre", "SEMESTRE": 9 },
+    { "NOMBRE": "10mo Semestre", "SEMESTRE": 10 }
+  ],
+
+  "major": [
+    { "NOMBRE": "INGENIERIA EN INFORMATICA", "CODIGO": "INGINFOR" },
+    { "NOMBRE": "INGENIERIA EN ELECTRICIDAD", "CODIGO": "INGELECD" },
+    { "NOMBRE": "INGENIERIA EN ELECTRONICA", "CODIGO": "INGELECA" },
+    { "NOMBRE": "INGENIERIA CIVIL", "CODIGO": "INGCIV" }
   ]
 }

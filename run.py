@@ -4,6 +4,7 @@ from flask_migrate import Migrate
 from src.utils.extensions import db, bcrypt, jwt, cors
 from src.routes.user_routes import user_bp
 from src.routes.auth_routes import auth_bp
+from src.routes.data_loading_routes import data_bp
 
 def create_app():
     app = Flask(__name__)
@@ -30,12 +31,13 @@ def create_app():
     from src.models.student_model import Student
 
     # Tablas de Relación (Uniones)
-    from src.models.curriculum_model import CurriculumCourse
+    from src.models.curriculum_course_model import CurriculumCourse
     from src.models.academic_record_model import AcademicRecord
 
     # Registramos los blueprint para routes.
     app.register_blueprint(user_bp, url_prefix='/api/users')
     app.register_blueprint(auth_bp, url_prefix='/api/auth')
+    app.register_blueprint(data_bp, url_prefix='/api/config')
 
     # Para migraciones
     Migrate(app, db)

@@ -26,7 +26,7 @@ class AcademicRecord(db.Model):
             'materia_id', 
             'año_id', 
             'semestre_id', 
-            'evaluation_type_id', # Agregamos esto a la llave única
+            'evaluation_type_id',
             name='_record_evaluation_uc'
         ),
     )

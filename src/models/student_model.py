@@ -6,11 +6,9 @@ class Student(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     nombre = db.Column(db.String(80), nullable=False)
     apellido = db.Column(db.String(80), nullable=False)
+    sexo = db.Column(db.Integer, nullable=False)
     matricula = db.Column(db.String(50), unique=True, nullable=False)
     estado_actual = db.Column(db.String(20), default='Activo', nullable=False)
-
-    # Campo para la predicción de IA (0.0 a 1.0)
-    riesgo_desercion = db.Column(db.Float, nullable=True)
 
     # El alumno pertenece a una carrera
     carrera_id = db.Column(db.Integer, db.ForeignKey('majors.id'), nullable=False)
