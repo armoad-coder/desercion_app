@@ -93,3 +93,58 @@
     { "NOMBRE": "INGENIERIA CIVIL", "CODIGO": "INGCIV" }
   ]
 }
+
+/* json para carga masiva de alumno. */ 
+
+[
+    {
+        "IDALUMNO": 5082,
+        "MATRICULA": "2013-INF-001",
+        "NOMBRE": "Ana",
+        "APELLIDO": "Gómez",
+        "SEXO": 2, 
+        "ESTADO_ACTUAL": "Activo",
+        "CARRERA_CODIGO": "INGINFOR",
+        "INGRESO_ANIO": 2013
+    },
+    {
+        "IDALUMNO": 5083,
+        "MATRICULA": "2013-INF-002",
+        "NOMBRE": "Pedro",
+        "APELLIDO": "Díaz",
+        "SEXO": 1, 
+        "ESTADO_ACTUAL": "Activo",
+        "CARRERA_CODIGO": "INGINFOR",
+        "INGRESO_ANIO": 2013
+    },
+    {
+        "IDALUMNO": 5085,
+        "MATRICULA": "2013-INF-003",
+        "NOMBRE": "Lauro",
+        "APELLIDO": "Flores",
+        "SEXO": 1, 
+        "ESTADO_ACTUAL": "Activo",
+        "CARRERA_CODIGO": "INGINFOR",
+        "INGRESO_ANIO": 2013
+    },
+    {
+        "IDALUMNO": 5088,
+        "MATRICULA": "2013-INF-004",
+        "NOMBRE": "Javier",
+        "APELLIDO": "Pérez",
+        "SEXO": 1, 
+        "ESTADO_ACTUAL": "Activo",
+        "CARRERA_CODIGO": "INGINFOR",
+        "INGRESO_ANIO": 2013
+    },
+    {
+        "IDALUMNO": 5089,
+        "MATRICULA": "2013-INF-005",
+        "NOMBRE": "Oscar",
+        "APELLIDO": "Ruiz",
+        "SEXO": 2, 
+        "ESTADO_ACTUAL": "Activo",
+        "CARRERA_CODIGO": "INGINFOR",
+        "INGRESO_ANIO": 2013
+    }
+]

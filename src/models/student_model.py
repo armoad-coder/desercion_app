@@ -3,7 +3,7 @@ from src.utils.extensions import db
 class Student(db.Model):
     __tablename__ = 'students'
     
-    id = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True, autoincrement=False)
     nombre = db.Column(db.String(80), nullable=False)
     apellido = db.Column(db.String(80), nullable=False)
     sexo = db.Column(db.Integer, nullable=False)

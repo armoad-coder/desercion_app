@@ -7,7 +7,9 @@ from src.services.data_loading_service import (
     load_major_data,
     load_academic_year_data,
     load_semester_data,
-    load_course_data
+    load_course_data,
+    load_academic_record_data,
+    load_student_data
 )
 # Importa tu función de verificación de rol (asumo que está en common_utils o similar)
 # from src.utils.common_utils import is_admin 
@@ -76,5 +78,22 @@ def load_courses():
     
     return jsonify({
         "message": f"Proceso de carga de Materias completado. ({len(results)} registros procesados).",
+        "details": results
+    }), 200
+
+# ➡️ RUTA PARA CARGA MASIVA DE ALUMNOS
+@data_bp.route('/load_students', methods=['POST'])
+# @is_admin 
+def load_students():
+    data = request.get_json()
+    if not isinstance(data, list):
+        return jsonify({"error": "El cuerpo debe ser una lista de objetos JSON"}), 400
+
+    results = load_student_data(data)
+    
+    # 📝 Nota: load_student_data es la función que hace la búsqueda de FKs e inserción
+    
+    return jsonify({
+        "message": f"Proceso de carga de Alumnos completado. ({len(results)} registros procesados).",
         "details": results
     }), 200
