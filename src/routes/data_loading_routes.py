@@ -42,7 +42,6 @@ def load_majors():
 # @is_admin # Aquí iría tu decorador de protección de rol
 def load_academic_years():
     data = request.get_json()
-    print(data)
     if not isinstance(data, list):
         return jsonify({"error": "El cuerpo debe ser una lista de objetos JSON"}), 400
 
